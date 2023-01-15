@@ -1,6 +1,8 @@
 const ws = new WebSocket("ws://localhost:8080/mess");
 
-ws.onopen = function (){};
+ws.onopen = function (){
+
+};
 
 ws.onmessage = function (event) {
     action(event.data);
