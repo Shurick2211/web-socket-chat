@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>My Chat</title>
-
+    <script type="text/javascript" src="myscript.js"></script>
 </head>
 <body>
 <div>
-    <h2>Enter yuor name and send message</h2>
-    <textarea width="10" ></textarea>
-    <textarea width="30" ></textarea>
-
+    <h2>Enter yuor name and send message!</h2>
+    Name:
+    <p><textarea id="name" cols="20" rows="1"></textarea></p>
+    Message:
+    <p><textarea id="mess" cols="40" rows="3"></textarea></p>
+    <button id="button" onclick="sendMess()" >Send Message!</button>
     <hr/>
 </div>
+<pre id="messages">
+    <h2>Chat:</h2>
+</pre>
 
 </body>
 </html>
